@@ -1,15 +1,24 @@
 ﻿@page "/"
-
 <PageTitle>Index</PageTitle>
-
-<ListCard></ListCard>
-
 <div class="row">
-    <h2 class="mt-3">Bil Card</h2>
-    <Badge Title="Ready drivers" Color="border-success" Value="7"></Badge>
-    <Badge Title="Latest order" Color="border-primary" Value="12/08"></Badge>
-    <Badge Title="Payment stage" Color="border-danger" Value="3"></Badge>
-    <Badge Title="Orders made" Color="border-secondary" Value="15"></Badge>
+    <Chart></Chart>
+    <Chart></Chart>
+    <Chart></Chart>
 </div>
+<div class="row">
+    <Slider></Slider>
+    <Progress Color="bg-warning">
+        <Bar Id="1" Color="bg-danger" Value="15"></Bar>
+        <Bar Id="2" Color="bg-primary" Value="50"></Bar>
+        <Bar Id="3" Color="bg-success" Value="100"></Bar>
+        <Bar Id="4" Color="bg-primary" Value="50"></Bar>
+    </Progress>
+</div>
+<div class="row">
+    <ListCard></ListCard>
+    <ListCard></ListCard>
+</div>
+@code{
 
-<Form Title="Collection"></Form>
+}
+

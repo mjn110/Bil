@@ -1,8 +1,8 @@
 ﻿@using BlazorInterfaceLibrary.Data
-<div class="card mt-3 shadow-sm mb-3">
+<div class="card shadow-sm mb-3">
     <h3 class="m-3">Collection</h3>
     <div class="card-body py-0">
-        <EditForm Model="@aPerson" OnValidSubmit="AddIt">
+        <EditForm Model="@aPerson" OnValidSubmit="PassPerson">
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
@@ -40,13 +40,18 @@
     </div>
 </div>
 @code {
-    Person aPerson = new Person();
-
     [Parameter]
     public string Title { get; set; }
 
-    private void AddIt()
+    [Parameter]
+    public Order Order { get; set; }
+
+    Person aPerson = new Person();
+
+    private void PassPerson()
     {
-        var newPerson = aPerson;
+        Order.AddIt(aPerson);
     }
+
+
 }

@@ -1,0 +1,24 @@
+﻿@page "/Order"
+@using BlazorInterfaceLibrary.Data
+<PageTitle>Order</PageTitle>
+<ListCard people="people"></ListCard>
+<div class="row">
+    <h2 class="mt-3">Bil Card</h2>
+    <Badge Title="Ready drivers" Color="border-success" Value="7"></Badge>
+    <Badge Title="Latest order" Color="border-primary" Value="12/08"></Badge>
+    <Badge Title="Payment stage" Color="border-danger" Value="3"></Badge>
+    <Badge Title="Orders made" Color="border-secondary" Value="15"></Badge>
+</div>
+
+<Form Title="Collection" Order="this"></Form>
+@code {
+    public List<Person> people { get; set; }
+
+    public void AddIt(Person aPerson)
+    {
+        if (people == null)
+            people = new List<Person>();
+        people.Add(aPerson);
+        StateHasChanged();
+    }
+}
