@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using BlazorInterfaceLibrary.Data
 <PageTitle>Index</PageTitle>
 <div class="row">
     <Chart></Chart>
@@ -19,6 +20,6 @@
     <ListCard></ListCard>
 </div>
 @code{
-
+    public List<Person> people { get; set; } = new List<Person>();
 }
 

@@ -6,13 +6,13 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
-                        <InputText type="date" @bind-Value="aPerson.Date" class="form-control" id="floatingInput"/>
+                        <InputText type="date" required @bind-Value="aPerson.Date" class="form-control" id="floatingInput" />
                         <label for="floatingInput">Pickup Date</label>
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
-                        <InputText type="text" @bind-Value="aPerson.Name" class="form-control" id="floatingInput" placeholder="Name"/>
+                        <InputText type="text" required @bind-Value="aPerson.Name" class="form-control" id="floatingInput" placeholder="Name" />
                         <label for="floatingInput">Name</label>
                     </div>
                 </div>
@@ -20,13 +20,13 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
-                        <InputText type="text" @bind-Value="aPerson.Postcode" class="form-control" id="floatingInput" placeholder="Postcode"/>
+                        <InputText type="text" required @bind-Value="aPerson.Postcode" class="form-control" id="floatingInput" placeholder="Postcode" />
                         <label for="floatingInput">Postcode</label>
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
-                        <InputText type="text" @bind-Value="aPerson.PhoneNumber" class="form-control" id="floatingInput" placeholder="PhoneNumber"/>
+                        <InputText type="text" required @bind-Value="aPerson.PhoneNumber" class="form-control" id="floatingInput" placeholder="PhoneNumber"/>
                         <label for="floatingInput">Phone Number</label>
                     </div>
                 </div>

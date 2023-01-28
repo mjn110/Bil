@@ -12,12 +12,11 @@
 
 <Form Title="Collection" Order="this"></Form>
 @code {
-    public List<Person> people { get; set; }
+    public List<Person> people { get; set; } = new List<Person>();
 
     public void AddIt(Person aPerson)
     {
-        if (people == null)
-            people = new List<Person>();
+        //if (people == null)
         people.Add(aPerson);
         StateHasChanged();
     }
