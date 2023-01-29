@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mjnso\\.nuget\\packages\\": {},
+    "C:\\Users\\MJN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjnso\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\MJN\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
       "projectName": "BlazorInterfaceLibrary",
-      "projectPath": "C:\\Users\\mjnso\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
-      "packagesPath": "C:\\Users\\mjnso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjnso\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\obj\\",
+      "projectPath": "C:\\Users\\MJN\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
+      "packagesPath": "C:\\Users\\MJN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MJN\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mjnso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MJN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
