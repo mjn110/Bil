@@ -49,7 +49,7 @@
                 {
                     <tr class="p-5">
                         <th scope="row">
-                            <button class="btn" onclick="@(() =>MoveForward(item))">
+                            <button class="btn" onclick="@(() =>MoveForward(item))" oncontextmenu="@(() =>MoveBack(item))" @oncontextmenu:preventDefault="true">
                                 @if(item.Status == 1)
                                 {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
@@ -75,6 +75,7 @@
                             <a href="Order.html" class="text-muted h6 text-decoration-none">@item.Name</a>
                         </td>
                     </tr>
+                    <Bar Color="bg-primary" Value="(item.Status*33)" height="1px"></Bar>
                 }
 @*                @if (people != null)
                 {
@@ -141,6 +142,15 @@
         if(person.Status < 3)
         {
             person.Status++;
+            StateHasChanged();
+        }
+    }
+
+    public void MoveBack(Person person)
+    {
+        if (person.Status > 1)
+        {
+            person.Status--;
             StateHasChanged();
         }
     }

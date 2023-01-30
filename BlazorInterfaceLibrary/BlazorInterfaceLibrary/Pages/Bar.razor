@@ -1,7 +1,10 @@
 ﻿<tr>
-    <th>@Id</th>
+    @if(Id>0)
+    {
+        <th>@Id</th>
+    }
     <td colspan="4" class="text-start align-middle">
-        <div class="progress">
+        <div class="progress" style="height: @height">
             <div class="progress-bar progress-bar-striped progress-bar-animated @Color"
                  role="progressbar" aria-label="Animated striped example" style="width: @Value%" aria-valuenow="15"
                  aria-valuemin="0" aria-valuemax="100"></div>
@@ -18,4 +21,7 @@
 
     [Parameter]
     public int Value { get; set; }
+
+    [Parameter]
+    public string height { get; set; } = "20px";
 }
