@@ -5,7 +5,7 @@
     }
     <td colspan="4" class="text-start align-middle">
         <div class="progress" style="height: @height">
-            <div class="progress-bar progress-bar-striped progress-bar-animated @Color"
+            <div class="progress-bar @(Striped ? "progress-bar-striped" : "") progress-bar-animated @Color"
                  role="progressbar" aria-label="Animated striped example" style="width: @Value%" aria-valuenow="15"
                  aria-valuemin="0" aria-valuemax="100"></div>
         </div>
@@ -21,6 +21,9 @@
 
     [Parameter]
     public int Value { get; set; }
+
+    [Parameter]
+    public bool Striped { get; set; } = false;
 
     [Parameter]
     public string height { get; set; } = "20px";
