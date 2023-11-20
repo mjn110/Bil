@@ -10,42 +10,7 @@
                 </tr>
             </thead>
             <tbody class="text-secondary m-4 h-100">
-                @*                <tr class="p-5">
-                <th scope="row">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
-                </svg>
-                </th>
-                <td class="w-50"><a href="Order.html" class="h6 text-decoration-none">Mike</a></td>
-                <td class="w-50"><a href="Order.html" class="h6 text-decoration-none">Wozowski</a></td>
-                </tr>
-                <tr class="p-5">
-                <th scope="row">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="currentColor" class="bi bi-truck-front-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                d="M3.5 0A2.5 2.5 0 0 0 1 2.5v9c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2v-9A2.5 2.5 0 0 0 12.5 0h-9ZM3 3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3.9c0 .625-.562 1.092-1.17.994C10.925 7.747 9.208 7.5 8 7.5c-1.208 0-2.925.247-3.83.394A1.008 1.008 0 0 1 3 6.9V3Zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-5-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Z" />
-                </svg>
-                </th>
-                <td class="w-50"><a href="Order.html" class="h6 text-decoration-none">Jon</a></td>
-                <td class="w-50"><a href="Order.html" class="h6 text-decoration-none">Snow</a></td>
-                </tr>
-                <tr class="p-5">
-                <th scope="row">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                fill="#3db05c" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
-                </svg>
-                </th>
-                <td class="w-50"><a href="Order.html" class="text-muted h6 text-decoration-none">Jon</a></td>
-                <td class="w-50">
-                <a href="Order.html" class="text-muted h6 text-decoration-none">Snow</a>
-                </td>
-                </tr>*@
-                @foreach (var item in people.TakeLast(3).Reverse())
+@*                 @foreach (var item in people.TakeLast(3).Reverse())
                 {
                     <tr class="p-5">
                         <th scope="row">
@@ -75,7 +40,47 @@
                             <a href="Order.html" class="text-muted h6 text-decoration-none">@item.Name</a>
                         </td>
                     </tr>
+
+
+                    
                     <Bar Color="bg-primary" Value="(item.Status*33)" height="1px"></Bar>
+                } *@
+
+                @if (PaginatedPeople != null)
+                {
+                    foreach (var item in PaginatedPeople)
+                    {
+                        <tr class="p-5">
+                            <th scope="row">
+                                <button class="btn" onclick="@(() =>MoveForward(item))" oncontextmenu="@(() =>MoveBack(item))" @oncontextmenu:preventDefault="true">
+                                    @if (item.Status == 1)
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
+                                        </svg>
+                                    }
+                                    else if (item.Status == 2)
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-truck-front-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M3.5 0A2.5 2.5 0 0 0 1 2.5v9c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2v-9A2.5 2.5 0 0 0 12.5 0h-9ZM3 3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3.9c0 .625-.562 1.092-1.17.994C10.925 7.747 9.208 7.5 8 7.5c-1.208 0-2.925.247-3.83.394A1.008 1.008 0 0 1 3 6.9V3Zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-5-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Z" />
+                                        </svg>
+                                    }
+                                    else if (item.Status == 3)
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#3db05c" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                        </svg>
+                                    }
+                                </button>
+                            </th>
+                            <td class="w-50 align-middle"><a href="Order.html" class="text-muted h6 text-decoration-none">@item.Date</a></td>
+                            <td class="w-50 align-middle">
+                                <a href="Order.html" class="text-muted h6 text-decoration-none">@item.Name</a>
+                            </td>
+                        </tr>
+
+                        <Bar Color="bg-primary" Value="(item.Status*33)" height="1px"></Bar>
+                    }
                 }
 @*                @if (people != null)
                 {
@@ -99,6 +104,9 @@
                         }
                     }
                 }*@
+                <tr>
+                    <Pagination PaginatedPeople="PaginatedPeople"></Pagination>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -107,9 +115,11 @@
     [Parameter]
     public List<Person> people { get; set; }
 
-    public void AddPersons()
+    public PaginatedList<Person> PaginatedPeople { get; set; } = null;
+
+    public async void AddPersons()
     {
-        people = new List<Person>();
+        var people = new List<Person>();
         people.Add(new Person
             {
                 Date = "2023/02/04",
@@ -134,7 +144,32 @@
                 Postcode = "3715955148",
                 Status = 2
             });
-
+        people.Add(new Person
+            {
+                Date = "2023/03/04",
+                Name = "Jack",
+                PhoneNumber = "+98 9126541287",
+                Postcode = "3716555148",
+                Status = 2
+            });
+        people.Add(new Person
+            {
+                Date = "2023/02/08",
+                Name = "Bob",
+                PhoneNumber = "+98 9386855965",
+                Postcode = "3715995148",
+                Status = 1
+            });
+        people.Add(new Person
+            {
+                Date = "2023/02/05",
+                Name = "Alis",
+                PhoneNumber = "+98 9918748975",
+                Postcode = "3715922148",
+                Status = 2
+            });
+        PaginatedPeople = new PaginatedList<Person>(people, 1, 3);
+        // PaginatedPeople = await PaginatedPeople.CreateAsync(people, 1, 3);
     }
 
     public void MoveForward(Person person)
@@ -157,9 +192,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        if (people == null)
+        if (PaginatedPeople == null)
         {
             AddPersons();
         }
+
     }
 }

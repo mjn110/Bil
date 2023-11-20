@@ -1,0 +1,29 @@
+﻿@using BlazorInterfaceLibrary.Data
+<nav aria-label="Pagination text-end">
+    <ul class="pagination pagination-sm m-0">
+        @for (int i = 1; i <= PaginatedPeople.TotalPage; i++)
+        {
+            <li class="page-item" aria-current="page">
+                <a class="page-link" aria-label="Next">
+                    <span class="page-link">@i</span>
+                </a>
+            </li>
+        }
+        @*         <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li> *@
+    </ul>
+</nav>
+@code {
+    [Parameter]
+    public PaginatedList<Person> PaginatedPeople { get; set; } = null;
+
+    public void PreviousPage()
+    {
+
+    }
+
+    public void NextPage()
+    {
+        
+    }
+}
