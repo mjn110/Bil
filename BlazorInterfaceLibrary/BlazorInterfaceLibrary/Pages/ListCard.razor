@@ -1,6 +1,7 @@
-﻿@using BlazorInterfaceLibrary.Data
+﻿@inject HttpClient http;
+@using BlazorInterfaceLibrary.Data
 <div class="col mb-3">
-    <div class="bg-white rounded border shadow overflow-auto p-3">
+    <div class="bg-white rounded border shadow overflow-auto p-3 h-100">
         <table class="table table-responsive-lg table-borderless table-hover mb-auto overflow-auto">
             <thead>
                 <tr>
@@ -105,7 +106,7 @@
                     }
                 }*@
                 <tr>
-                    <Pagination PaginatedPeople="PaginatedPeople"></Pagination>
+                    <Pagination SelectedPage="ChangePage" PaginatedPeople="PaginatedPeople"></Pagination>
                 </tr>
             </tbody>
         </table>
@@ -113,63 +114,20 @@
 </div>
 @code {
     [Parameter]
-    public List<Person> people { get; set; }
+    public List<dynamic> people { get; set; } = new List<dynamic>();
 
-    public PaginatedList<Person> PaginatedPeople { get; set; } = null;
+    public PaginatedList<dynamic> PaginatedPeople { get; set; } = null;
 
-    public async void AddPersons()
+    string objectType;
+
+    public void AddPersons()
     {
-        var people = new List<Person>();
-        people.Add(new Person
-            {
-                Date = "2023/02/04",
-                Name = "Mike",
-                PhoneNumber = "+98 9126545987",
-                Postcode = "3715955148",
-                Status = 2
-            });
-        people.Add(new Person
-            {
-                Date = "2023/02/04",
-                Name = "Muhammad",
-                PhoneNumber = "+98 9386955901",
-                Postcode = "3715955148",
-                Status = 1
-            });
-        people.Add(new Person
-            {
-                Date = "2023/02/04",
-                Name = "Lisa",
-                PhoneNumber = "+98 9916548975",
-                Postcode = "3715955148",
-                Status = 2
-            });
-        people.Add(new Person
-            {
-                Date = "2023/03/04",
-                Name = "Jack",
-                PhoneNumber = "+98 9126541287",
-                Postcode = "3716555148",
-                Status = 2
-            });
-        people.Add(new Person
-            {
-                Date = "2023/02/08",
-                Name = "Bob",
-                PhoneNumber = "+98 9386855965",
-                Postcode = "3715995148",
-                Status = 1
-            });
-        people.Add(new Person
-            {
-                Date = "2023/02/05",
-                Name = "Alis",
-                PhoneNumber = "+98 9918748975",
-                Postcode = "3715922148",
-                Status = 2
-            });
-        PaginatedPeople = new PaginatedList<Person>(people, 1, 3);
-        // PaginatedPeople = await PaginatedPeople.CreateAsync(people, 1, 3);
+        PaginatedPeople = new PaginatedList<dynamic>(people, 1, 3);
+    }
+
+    public void ChangePage(int index)
+    {
+        PaginatedPeople = new PaginatedList<dynamic>(people, index, 3);
     }
 
     public void MoveForward(Person person)
@@ -192,10 +150,16 @@
 
     protected override async Task OnInitializedAsync()
     {
+        string json = File.ReadAllText("wwwroot/data/people.json");
+        var peopleList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Person>>(json);
+        foreach(var item in peopleList)
+        {
+            people.Add(item);
+        }
+
         if (PaginatedPeople == null)
         {
             AddPersons();
         }
-
     }
 }

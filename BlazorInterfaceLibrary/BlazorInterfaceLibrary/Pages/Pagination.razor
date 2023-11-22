@@ -1,29 +1,59 @@
 ﻿@using BlazorInterfaceLibrary.Data
-<nav aria-label="Pagination text-end">
+<nav aria-label="Pagination">
     <ul class="pagination pagination-sm m-0">
-        @for (int i = 1; i <= PaginatedPeople.TotalPage; i++)
+        <li class="page-item @IsPrevious" aria-current="page">
+            <a class="page-link" @onclick="() => SelectPage(PaginatedPeople.PageIndex-1)" aria-label="Next">Previous</a>
+        </li>
+        @if (PaginatedPeople is not null)
         {
-            <li class="page-item" aria-current="page">
-                <a class="page-link" aria-label="Next">
-                    <span class="page-link">@i</span>
-                </a>
-            </li>
+            for (int i = 1; i <= PaginatedPeople.TotalPage; i++)
+            {
+                int tempNum = i;
+                string IsActive = (PaginatedPeople.PageIndex == i) ? "active" : "";
+                <li class="page-item @IsActive" aria-current="page">
+                    <a class="page-link" @onclick="() => SelectPage(tempNum)" aria-label="Previous">@i</a>
+                </li>
+            }
         }
-        @*         <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li> *@
+        <li class="page-item @IsNext" aria-current="page">
+            <a class="page-link" @onclick="() => SelectPage(PaginatedPeople.PageIndex+1)" aria-label="Next">Next</a>
+        </li>
     </ul>
 </nav>
 @code {
     [Parameter]
-    public PaginatedList<Person> PaginatedPeople { get; set; } = null;
+    public PaginatedList<dynamic> PaginatedPeople { get; set; } = null;
 
-    public void PreviousPage()
+    [Parameter]
+    public EventCallback<int> SelectedPage { get; set; }
+
+    public int Index { get; set; } = 1;
+
+    public string IsPrevious { get; set; } = "";
+
+    public string IsNext { get; set; } = "";
+
+    public string IsActive { get; set; } = "";
+
+    public void SelectPage(int index)
     {
-
+        SelectedPage.InvokeAsync(index);
+        Index = index;
+        Checking();
     }
 
-    public void NextPage()
+    protected override async Task OnInitializedAsync()
     {
-        
+        Checking();
+    }
+
+    public void Checking()
+    {
+        if (PaginatedPeople is not null)
+        {
+            IsPrevious = (Index > 1) ? "" : "disabled";
+            IsNext = (Index < PaginatedPeople.TotalPage) ? "" : "disabled";
+            StateHasChanged();
+        }
     }
 }
