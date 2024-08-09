@@ -5,9 +5,9 @@
         <table class="table table-responsive-lg table-borderless table-hover mb-auto overflow-auto">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Collection</th>
-                    <th scope="col">Destination</th>
+                    <th scope="col" class="text-center px-0">#</th>
+                    <th scope="col" class="px-0">Collection</th>
+                    <th scope="col" class="px-0">Destination</th>
                 </tr>
             </thead>
             <tbody class="text-secondary m-4 h-100">
@@ -47,11 +47,9 @@
                         <Bar Color="bg-primary" Value="(item.Status*33)" height="3px"></Bar>
                     }
                 }
-                <tr>
-                    <Pagination SelectedPage="ChangePage" PaginatedPeople="PaginatedPeople"></Pagination>
-                </tr>
             </tbody>
         </table>
+        <Pagination SelectedPage="ChangePage" PaginatedPeople="PaginatedPeople"></Pagination>
     </div>
 </div>
 @code {
