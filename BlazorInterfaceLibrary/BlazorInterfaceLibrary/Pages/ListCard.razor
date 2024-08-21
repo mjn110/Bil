@@ -17,7 +17,7 @@
                     {
                         <tr>
                             <th class="py-0" scope="row">
-                                <button class="btn py-0" onclick="@(() =>MoveForward(item))" oncontextmenu="@(() =>MoveBack(item))" @oncontextmenu:preventDefault="true">
+                                <button class="btn py-0" onclick="@(() =>MoveForward((Person)item))" oncontextmenu="@(() =>MoveBack((Person)item))" @oncontextmenu:preventDefault="true">
                                     @if (item.Status == 1)
                                     {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
