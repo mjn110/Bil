@@ -3,7 +3,7 @@
         <div class="card-body m-2 pb-5" style="height: 200px;">
             <div class="row h-100">
                 <div class="col col-lg-12 d-flex justify-content-center">
-                    <div class="pie m-0" style="--p:100; --c: lightgray">Sell</div>
+                    <div class="pie m-0" style="--p:100; --c: lightgray">@Name</div>
                     <div class="pie m-0" style="--p:@a; --b:20px; --c: #007bff">&nbsp;</div>
                     <div class="pie m-0" style="--p:@b; --b:15px; --c: #dc3545">&nbsp;</div>
                     <div class="pie m-0" style="--p:@c; --b:10px; --c: #ebba34">&nbsp;</div>
@@ -32,6 +32,8 @@
 </div>
 
 @code {
+    [Parameter]
+    public string Name { get; set; } = string.Empty;
     [Parameter]
     public int a { get; set; } = 20;
     [Parameter]
