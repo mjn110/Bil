@@ -1,0 +1,46 @@
+﻿@page "/todo"
+
+<h3 class="mb-3">To-Do List</h3>
+
+<div class="input-group mb-2">
+    <input class="form-control" @bind="newTask" placeholder="Enter a task..." />
+    <button class="btn btn-primary" @onclick="AddTask">Add</button>
+</div>
+
+<ul class="list-group">
+    @foreach (var task in tasks.Select((value, index) => new { value, index }))
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-center rounded-3 border mb-2">
+            @task.value
+            <button class="btn btn-danger btn-sm" @onclick="() => RemoveTask(task.index)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                </svg>
+            </button>
+        </li>
+    }
+</ul>
+
+@code {
+    private string newTask = string.Empty;
+    private List<string> tasks = new List<string>();
+
+    private void AddTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(newTask);
+            newTask = string.Empty; // Clear input field
+            StateHasChanged(); // Ensure UI updates
+        }
+    }
+
+    private void RemoveTask(int index)
+    {
+        if (index >= 0 && index < tasks.Count)
+        {
+            tasks.RemoveAt(index);
+            StateHasChanged(); // Ensure UI updates
+        }
+    }
+}
