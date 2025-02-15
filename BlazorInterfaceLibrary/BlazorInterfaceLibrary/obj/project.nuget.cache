@@ -1,14 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xOtsLvMi9po=",
+  "dgSpecHash": "dDeHaKGdW7dmnr1ffupgXEPcUrSEKZiG5vtLWVgXdv2WJRPv8Q4tww/OZ5IJW4UIMGv7wLMM4tWQwmeSDoIG4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\mjnso\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\mjnso\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\mjnso\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\mjnso\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\mjnso\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\MJN\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
