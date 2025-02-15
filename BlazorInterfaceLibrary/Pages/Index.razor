@@ -1,0 +1,31 @@
+﻿@page "/"
+@using BlazorInterfaceLibrary.Data
+<PageTitle>Index</PageTitle>
+<div class="row">
+    <Badge Title="Ready drivers" Color="border-primary" Value="7"></Badge>
+    <Badge Title="Latest orders" Color="border-secondary" Value="23/8"></Badge>
+    <Badge Title="Payments" Color="border-danger" Value="3"></Badge>
+    <Badge Title="Orders made" Backgrround="text-bg-primary" Value="15"></Badge>
+</div>
+<div class="row">
+    <Chart Name="View" a="70" b="45" c="20"></Chart>
+    <Chart Name="Sell" a="80" b="50" c="30"></Chart>
+    <Chart Name="Cart" a="90" b="70" c="55"></Chart>
+</div>
+<div class="row">
+    <Slider></Slider>
+    <Progress Color="bg-white">
+        <Bar Id="1" Color="bg-danger" Striped="true" Value="15"></Bar>
+        <Bar Id="2" Color="bg-warning" Striped="true" Value="50"></Bar>
+        <Bar Id="3" Color="bg-primary" Striped="true" Value="100"></Bar>
+        <Bar Id="4" Color="bg-warning" Striped="true" Value="50"></Bar>
+    </Progress>
+</div>
+<div class="row">
+    <ListCard></ListCard>
+    <ListCard></ListCard>
+</div>
+@code{
+    public List<Person> people { get; set; } = new List<Person>();
+}
+
