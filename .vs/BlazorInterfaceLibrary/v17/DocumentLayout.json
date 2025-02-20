@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|c:\\users\\mjnso\\onedrive\\documents\\github\\bil\\blazorinterfacelibrary\\pages\\chart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|solutionrelative:blazorinterfacelibrary\\pages\\chart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|c:\\users\\mjnso\\onedrive\\documents\\github\\bil\\blazorinterfacelibrary\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|solutionrelative:blazorinterfacelibrary\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|c:\\users\\mjnso\\onedrive\\documents\\github\\bil\\blazorinterfacelibrary\\pages\\listcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|solutionrelative:blazorinterfacelibrary\\pages\\listcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|c:\\users\\mjnso\\onedrive\\documents\\github\\bil\\blazorinterfacelibrary\\pages\\form.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|solutionrelative:blazorinterfacelibrary\\pages\\form.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|c:\\users\\mjnso\\onedrive\\documents\\github\\bil\\blazorinterfacelibrary\\pages\\order.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20A0F4DD-B3CB-42AD-A8A8-E667D59B9221}|BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj|solutionrelative:blazorinterfacelibrary\\pages\\order.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chart.razor",
+              "DocumentMoniker": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Chart.razor",
+              "RelativeDocumentMoniker": "BlazorInterfaceLibrary\\Pages\\Chart.razor",
+              "ToolTip": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Chart.razor",
+              "RelativeToolTip": "BlazorInterfaceLibrary\\Pages\\Chart.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T03:53:04.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListCard.razor",
+              "DocumentMoniker": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\ListCard.razor",
+              "RelativeDocumentMoniker": "BlazorInterfaceLibrary\\Pages\\ListCard.razor",
+              "ToolTip": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\ListCard.razor",
+              "RelativeToolTip": "BlazorInterfaceLibrary\\Pages\\ListCard.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T03:53:04.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.razor",
+              "DocumentMoniker": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Order.razor",
+              "RelativeDocumentMoniker": "BlazorInterfaceLibrary\\Pages\\Order.razor",
+              "ToolTip": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Order.razor",
+              "RelativeToolTip": "BlazorInterfaceLibrary\\Pages\\Order.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T03:53:04.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form.razor",
+              "DocumentMoniker": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Form.razor",
+              "RelativeDocumentMoniker": "BlazorInterfaceLibrary\\Pages\\Form.razor",
+              "ToolTip": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Form.razor",
+              "RelativeToolTip": "BlazorInterfaceLibrary\\Pages\\Form.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T03:53:04.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "BlazorInterfaceLibrary\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\mjnso\\OneDrive\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\Pages\\Index.razor",
+              "RelativeToolTip": "BlazorInterfaceLibrary\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-15T03:53:04.463Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
