@@ -13,7 +13,7 @@
   --p:20;
   --b:20px;
   --c:darkred;
-  --w:150px;
+  --w:110px;
   
   width: var(--w);
   aspect-ratio: 1;

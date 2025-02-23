@@ -1,7 +1,7 @@
 ﻿@inject HttpClient http;
 @using BlazorInterfaceLibrary.Data
-<div class="col mb-3">
-    <div class="bg-white rounded border shadow overflow-auto p-3 h-100">
+<div class="col">
+    <div class="card bg-white shadow-sm overflow-auto p-3 h-100">
         <table class="table table-responsive-lg table-borderless table-hover mb-auto overflow-auto">
             <thead>
                 <tr>
@@ -49,6 +49,7 @@
                 }
             </tbody>
         </table>
+        <Download></Download>
         <Pagination SelectedPage="ChangePage" PaginatedPeople="PaginatedPeople"></Pagination>
     </div>
 </div>
