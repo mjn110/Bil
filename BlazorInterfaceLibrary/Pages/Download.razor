@@ -15,7 +15,7 @@
     private async Task DownloadComponent()
     {
         Parent = (Parent!=null) ? (Parent + ".razor") : "Download.razor";
-        string filePath = Path.Combine(Environment.WebRootPath, "Pages", Parent);
+        string filePath = Path.Combine(Environment.WebRootPath, "Components", Parent);
         Console.Write(filePath);
         if (File.Exists(filePath))
         {
