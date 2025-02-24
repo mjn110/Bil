@@ -1,0 +1,19 @@
+﻿<div class="col-6 col-lg mt-2 mb-3">
+    <div class="card @Color @Backgrround shadow-sm">
+        <h6 class="m-3 float-left">@Title</h6>
+        <div class="card-body">
+            <p class="display-5 px-3 m-auto h-100">@Value</p>
+            <Download Parent="@this.GetType().Name"></Download>
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string Color { get; set; }
+    [Parameter]
+    public string Backgrround { get; set; }
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Value { get; set; }
+}
