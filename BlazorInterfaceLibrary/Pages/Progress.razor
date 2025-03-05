@@ -1,4 +1,26 @@
-﻿<div class="col-lg-8 col-12 mb-4">
+﻿@page "/progress"
+@page "/progress/{Width}"
+@using Newtonsoft.Json.Linq
+@if (ShowDescription)
+{
+    <h3 class="mb-3">@this.GetType().Name</h3>
+}
+
+@if (overview != null)
+{
+    <p>
+        <h5 class="mt-3">Overview</h5>
+        @overview
+    </p>
+}
+@if (usage != null)
+{
+    <p>
+        <h5 class="mt-3">Usage</h5>
+        @usage
+    </p>
+}
+<div class="mb-4 @Width">
     <div class="card table-responsive h-100 @Color border border-primary border-1 shadow-sm rounded p-4">
         <table class="table table-borderless mb-auto">
             <thead class="@Color">
@@ -18,8 +40,43 @@
 </div>
 @code {
     [Parameter]
+    public string description { get; set; } = "false";
+    private string overview { get; set; }
+    private string usage { get; set; }
+    private bool ShowDescription = false;
+
+    [Parameter]
     public string Color { get; set; }
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Width { get; set; } = "col-12";
+
+    protected override async Task OnInitializedAsync()
+    {
+        ShowDescription = bool.TryParse(description, out var result) && result;
+        if (ShowDescription)
+        {
+            GetDescription();
+        }
+    }
+
+    private void GetDescription()
+    {
+        string json = File.ReadAllText("wwwroot/data/description.json");
+
+        // Deserialize into a JArray for dynamic access
+        var descriptions = JArray.Parse(json);
+
+        // Find the matching record based on Name
+        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);
+
+        if (record != null)
+        {
+            overview = record["Overview"]?.ToString();
+            usage = record["Usage"]?.ToString();
+        }
+    }
 }

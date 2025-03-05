@@ -1,4 +1,29 @@
-﻿<div class="col-12 col-md mb-3">
+﻿@page "/chart"
+@page "/chart/{description}"
+@using Newtonsoft.Json.Linq
+
+@if (ShowDescription)
+{
+    <h3 class="mb-3">@this.GetType().Name</h3>
+}
+
+@if (overview != null)
+{
+    <p>
+        <h5 class="mt-3">Overview</h5>
+        @overview
+    </p>
+}
+@if (usage != null)
+{
+    <p>
+        <h5 class="mt-3">Usage</h5>
+        @usage
+    </p>
+}
+
+
+<div class="col-4 col-md mb-3">
     <div class="card border shadow-sm mb-3 h-100">
         <div class="card-body m-3 pb-4">
 
@@ -28,11 +53,41 @@
 
 @code {
     [Parameter]
-    public string Name { get; set; } = string.Empty;
+    public string Name { get; set; } = "Chart";
     [Parameter]
-    public int a { get; set; } = 20;
+    public int a { get; set; } = 70;
     [Parameter]
-    public int b { get; set; } = 10;
+    public int b { get; set; } = 50;
     [Parameter]
-    public int c { get; set; } = 0;
+    public int c { get; set; } = 20;
+
+    [Parameter]
+    public string description { get; set; } = "false";
+    private string overview { get; set; }
+    private string usage { get; set; }
+    private bool ShowDescription = false;
+    protected override async Task OnInitializedAsync()
+    {
+        ShowDescription = bool.TryParse(description, out var result) && result;
+        if (ShowDescription)
+        {
+            GetDescription();
+        }
+    }
+    private void GetDescription()
+    {
+        string json = File.ReadAllText("wwwroot/data/description.json");
+
+        // Deserialize into a JArray for dynamic access
+        var descriptions = JArray.Parse(json);
+
+        // Find the matching record based on Name
+        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);
+
+        if (record != null)
+        {
+            overview = record["Overview"]?.ToString();
+            usage = record["Usage"]?.ToString();
+        }
+    }
 }

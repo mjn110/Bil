@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Badge",
+    "Overview": "The Badge component is a Blazor UI element designed to present numerical values inside a structured and visually distinct card. It is commonly used to highlight key information such as scores, statistics, or important metrics in a clean and organized manner. With its simple yet effective design, the Badge component ensures that numerical data stands out, making it easier for users to interpret results at a glance. Whether used in dashboards, reports, or user interfaces, this component provides a quick and clear representation of essential figures.",
+    "Usage": "The Badge component requires a Title and a Value parameter. The Title defines the label, while the Value represents the number to be displayed. This component can be dynamically updated based on data changes, making it suitable for real-time applications, performance tracking, and analytical dashboards."
+  },
+  {
+    "Name": "Chart",
+    "Overview": "The Chart component is a Blazor-based visualization tool that presents results in a circular format, making it ideal for comparing data points effectively. This component enhances data representation by providing a clear, intuitive illustration of proportions, helping users analyze trends and distributions at a glance.",
+    "Usage": "The Chart component takes a dataset and renders it in a circular shape, such as a pie or donut chart, for easy comparison of values. It supports dynamic updates and customizable styling to fit various data visualization needs."
+  },
+  {
+    "Name": "Slider",
+    "Overview": "The Slide component is a Blazor-based image carousel that cycles through multiple images, providing an interactive way to showcase visual content. It supports both automatic and manual navigation, making it ideal for displaying banners, product images, or galleries. The component enhances user experience by allowing seamless transitions between slides, with configurable timing and controls.",
+    "Usage": "The Slide component takes a list of image URLs and displays them in a rotating carousel. It supports an optional Interval parameter to control the transition speed. Users can manually navigate through slides or let them change automatically."
+  },
+  {
+    "Name": "Progress",
+    "Overview": "The Progress component is a UI element in your Blazor component library that visually represents task completion. It is designed to be reusable, dynamic, and responsive. This component allows users to track the progress of a task by displaying a percentage-based progress bar.",
+    "Usage": "The Progress component is used to visually represent task completion by displaying a percentage-based progress bar. It accepts a ProgressValue parameter (0-100) to determine the fill level. The component can be updated dynamically based on user actions or application logic."
+  },
+  {
+    "Name": "ToDo",
+    "Overview": "The Bil List Component is a flexible and interactive component for displaying entity records in a paginated list. It supports dynamic data handling, customizable pagination, and record-specific actions. Designed for Blazor applications, it ensures smooth navigation and efficient data management. With built-in pagination, users can control the number of records per page while seamlessly navigating through the dataset. Additionally, each record features an action button that allows users to trigger specific tasks, making this component ideal for managing structured data.",
+    "Usage": "To use the Blazor List Component, simply add it to your Blazor page and pass a list of records as a parameter. You can define the number of records per page and handle actions for each record using the built-in status-based button functionality."
+  },
+  {
+    "Name": "ListCard",
+    "Overview": "The Blazor To-Do List Component is a simple yet powerful tool for managing tasks within a Blazor application. It allows users to add, display, and remove tasks dynamically using Blazor’s two-way data binding. Built with Bootstrap for a clean and responsive UI, this component is designed to be lightweight and easy to integrate into any application. With an intuitive interface and real-time updates, users can quickly organize their tasks without needing page reloads. Whether used for personal productivity, project tracking, or as a foundational component for more advanced task management features, this to-do list offers flexibility and efficiency.",
+    "Usage": "Users enter a task in the input field and click the Add button to store it. Tasks are displayed dynamically in a list, each with a delete button. Clicking the delete button removes the corresponding task from the list."
+  }
+]

@@ -1,5 +1,29 @@
-﻿@inject HttpClient http;
+﻿@page "/list"
+@page "/list/{description}"
+@page "/list/{description}/{RecordsPerPage}"
+@inject HttpClient http;
 @using BlazorInterfaceLibrary.Data
+@using Newtonsoft.Json.Linq
+@if (ShowDescription)
+{
+    <h3 class="mb-3">@this.GetType().Name</h3>
+}
+@if (overview != null)
+{
+    <p>
+
+        <h5 class="mt-3">Overview</h5>
+        @overview
+    </p>
+}
+@if (usage != null)
+{
+    <p>
+        <h5 class="mt-3">Usage</h5>
+        @usage
+    </p>
+}
+
 <div class="col">
     <div class="card bg-white shadow-sm overflow-auto p-3 h-100">
         <table class="table table-responsive-lg table-borderless table-hover mb-auto overflow-auto">
@@ -55,20 +79,30 @@
 </div>
 @code {
     [Parameter]
+    public string description { get; set; } = "false";
+    private string overview { get; set; }
+    private string usage { get; set; }
+    private bool ShowDescription = false;
+
+    [Parameter]
     public List<dynamic> people { get; set; } = new List<dynamic>();
 
     public PaginatedList<dynamic> PaginatedPeople { get; set; } = null;
 
-    string objectType;
+    [Parameter]
+    public string RecordsPerPage { get; set; } = "3";
+
+
+
 
     public void AddPersons()
     {
-        PaginatedPeople = new PaginatedList<dynamic>(people, 1, 3);
+        PaginatedPeople = new PaginatedList<dynamic>(people, 1, int.Parse(RecordsPerPage));
     }
 
     public void ChangePage(int index)
     {
-        PaginatedPeople = new PaginatedList<dynamic>(people, index, 3);
+        PaginatedPeople = new PaginatedList<dynamic>(people, index, int.Parse(RecordsPerPage));
     }
 
     public void MoveForward(Person person)
@@ -102,5 +136,29 @@
         {
             AddPersons();
         }
+
+        ShowDescription = bool.TryParse(description, out var result) && result;
+        if (ShowDescription)
+        {
+            GetDescription();
+        }
     }
+
+    private void GetDescription()
+    {
+        string json = File.ReadAllText("wwwroot/data/description.json");
+
+        // Deserialize into a JArray for dynamic access
+        var descriptions = JArray.Parse(json);
+
+        // Find the matching record based on Name
+        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);
+
+        if (record != null)
+        {
+            overview = record["Overview"]?.ToString();
+            usage = record["Usage"]?.ToString();
+        }
+    }
+
 }

@@ -1,4 +1,26 @@
-﻿<div class="col-6 col-lg mt-2 mb-3">
+﻿@page "/badge/{Title}/{Value}"
+@page "/badge/{Title}/{Value}/{description}"
+@using Newtonsoft.Json.Linq
+@if (ShowDescription)
+{
+    <h3 class="mb-3">@this.GetType().Name</h3>
+}
+
+@if (overview != null)
+{
+    <p>
+        <h5 class="mt-3">Overview</h5>
+        @overview
+    </p>
+}
+@if (usage != null)
+{
+    <p>
+        <h5 class="mt-3">Usage</h5>
+        @usage
+    </p>
+}
+<div class="col-6 col-lg mt-2 mb-3">
     <div class="card @Color @Backgrround shadow-sm">
         <h6 class="m-3 float-left">@Title</h6>
         <div class="card-body">
@@ -16,4 +38,36 @@
     public string Title { get; set; }
     [Parameter]
     public string Value { get; set; }
+
+    [Parameter]
+    public string description { get; set; } = "false";
+    private string overview { get; set; }
+    private string usage { get; set; }
+    private bool ShowDescription = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ShowDescription = bool.TryParse(description, out var result) && result;
+        if (ShowDescription)
+        {
+            GetDescription();
+        }
+    }
+
+    private void GetDescription()
+    {
+        string json = File.ReadAllText("wwwroot/data/description.json");
+
+        // Deserialize into a JArray for dynamic access
+        var descriptions = JArray.Parse(json);
+
+        // Find the matching record based on Name
+        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);
+
+        if (record != null)
+        {
+            overview = record["Overview"]?.ToString();
+            usage = record["Usage"]?.ToString();
+        }
+    }
 }

@@ -14,16 +14,15 @@
 </div>
 <div class="row g-3">
     <Slider></Slider>
-    <Progress Color="bg-white">
+    <Progress Width="col-lg-8 col-12" Color="bg-white">
         <Bar Id="1" Color="bg-danger" Striped="true" Value="15"></Bar>
         <Bar Id="3" Color="bg-primary" Striped="true" Value="100"></Bar>
         <Bar Id="4" Color="bg-warning" Striped="true" Value="50"></Bar>
-
     </Progress>
 </div>
 <div class="row g-3">
-    <ListCard></ListCard>
-    <ListCard></ListCard>
+    <ListCard description="d-none"></ListCard>
+    <ListCard description="d-none"></ListCard>
 </div>
 @code{
     public List<Person> people { get; set; } = new List<Person>();
