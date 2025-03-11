@@ -1,9 +1,9 @@
 ﻿<tr>
     @if(Id>0)
     {
-        <th>@Id</th>
+        <th class="p-1">@Id</th>
     }
-    <td colspan="4" class="text-start align-middle py-2">
+    <td colspan="4" class="text-start align-middle">
         <div class="progress" style="height: @height">
             <div class="progress-bar @(Striped ? "progress-bar-striped" : "") progress-bar-animated @Color"
                  role="progressbar" aria-label="Animated striped example" style="width: @Value%" aria-valuenow="15"
