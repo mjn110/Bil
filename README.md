@@ -1,5 +1,6 @@
 # Bil
 Blazor Interface Library (Bil) A library of razor components, helps developers to build functional user interfaces
-![Alt text](BlazorInterfaceLibrary/wwwroot/Images/Slides/example.png)
+![Showcase](BlazorInterfaceLibrary/wwwroot/Images/Slides/Showcase.png)
 Library consist of five main component to display data and add data form.
+
 This Library have been built to help developers to build Blazor apps eazier and faster.
