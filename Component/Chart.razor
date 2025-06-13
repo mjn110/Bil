@@ -1,0 +1,92 @@
+﻿@page "/chart"  
+@page "/chart/{description}"  
+@using Newtonsoft.Json.Linq  
+
+@if (ShowDescription)  
+{  
+    <h3 class="mb-3">@this.GetType().Name</h3>  
+}  
+
+@if (overview != null)  
+{  
+    <p>  
+        <h5 class="mt-3">Overview</h5>  
+        @overview  
+    </p>  
+}  
+@if (usage != null)  
+{  
+    <p>  
+        <h5 class="mt-3">Usage</h5>  
+        @usage  
+    </p>  
+}  
+
+<div class="col-12 col-md mb-3">  
+    <div class="card border shadow-sm mb-3 h-100">  
+        <div class="card-body m-3 pb-4">  
+
+            <div class="row h-100">  
+                <div class="col col-lg-12 d-flex justify-content-center" style="height:80px !important;">  
+                    <div class="pie m-0" style="--p:100; --c: lightgray">@Name</div>  
+                    <div class="pie m-0" style="--p:@a; --b:20px; --c: #007bff">&nbsp;</div>  
+                    <div class="pie m-0" style="--p:@b; --b:15px; --c: #dc3545">&nbsp;</div>  
+                    <div class="pie m-0" style="--p:@c; --b:10px; --c: #ebba34">&nbsp;</div>  
+                </div>  
+            </div>  
+            <div class="row d-none d-lg-flex">  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-warning mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Users</small>  
+                </div>  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-danger mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Self</small>  
+                </div>  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-primary mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Official</small>  
+                </div>  
+            </div>  
+            <Download Parent="@this.GetType().Name"></Download>  
+        </div>  
+    </div>  
+</div>  
+
+@code {  
+    [Parameter]  
+    public string Name { get; set; } = "Chart";  
+    [Parameter]  
+    public int a { get; set; } = 70;  
+    [Parameter]  
+    public int b { get; set; } = 50;  
+    [Parameter]  
+    public int c { get; set; } = 20;  
+
+    [Parameter]  
+    public string description { get; set; } = "false";  
+    private string overview { get; set; }  
+    private string usage { get; set; }  
+    private bool ShowDescription = false;  
+    protected override async Task OnInitializedAsync()  
+    {  
+        ShowDescription = bool.TryParse(description, out var result) && result;  
+        if (ShowDescription)  
+        {  
+            GetDescription();  
+        }  
+    }  
+    private void GetDescription()  
+    {  
+        string json = File.ReadAllText("wwwroot/data/description.json");  
+
+        // Deserialize into a JArray for dynamic access  
+        var descriptions = JArray.Parse(json);  
+
+        // Find the matching record based on Name  
+        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);  
+
+        if (record != null)  
+        {  
+            overview = record["Overview"]?.ToString();  
+            usage = record["Usage"]?.ToString();  
+        }  
+    }  
+}
