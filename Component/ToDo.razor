@@ -1,6 +1,6 @@
 ﻿@page "/todo"
 @page "/todo/{description}"
-@using Component.Data
+@using Components.Data
 @using Newtonsoft.Json.Linq
 <div>
     @if (bool.TryParse(description, out var result))

@@ -185,24 +185,24 @@
       "PackagePath": "staticwebassets\\exampleJsInterop.js"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Component.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Components.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Component.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Components.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Component.props",
-      "PackagePath": "build\\Component.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Components.props",
+      "PackagePath": "build\\Components.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Component.props",
-      "PackagePath": "buildMultiTargeting\\Component.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Components.props",
+      "PackagePath": "buildMultiTargeting\\Components.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Component.props",
-      "PackagePath": "buildTransitive\\Component.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Components.props",
+      "PackagePath": "buildTransitive\\Components.props"
     }
   ],
   "ElementsToRemove": []

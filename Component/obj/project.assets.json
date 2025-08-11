@@ -878,9 +878,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\Component\\Component.csproj",
-      "projectName": "Component",
-      "projectPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\Component\\Component.csproj",
+      "projectUniqueName": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\Component\\Components.csproj",
+      "projectName": "Components",
+      "projectPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\Component\\Components.csproj",
       "packagesPath": "C:\\Users\\Mohammad\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\Component\\obj\\",
       "projectStyle": "PackageReference",
@@ -951,7 +951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

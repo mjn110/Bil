@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Component.Data
+namespace Components.Data
 {
     public class PaginatedList<T> : List<T>
     {

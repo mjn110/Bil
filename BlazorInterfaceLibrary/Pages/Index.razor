@@ -1,30 +1,31 @@
 ﻿@page "/"
 @using BlazorInterfaceLibrary.Data
-@using Component
+@using Components
+@using Components.Enums
 
 <PageTitle>Blazor Interface Library</PageTitle>
 <div class="row g-3">
-    <Badge Title="Ready drivers" Color="border-primary" Value="7"></Badge>
-    <Badge Title="Latest orders" Color="border-secondary" Value="23/8"></Badge>
-    <Badge Title="Payments" Color="border-danger" Value="3"></Badge>
-    <Badge Title="Orders made" Backgrround="text-bg-primary" Value="15"></Badge>
+    <Badge Title="Ready drivers" Width="Width.col5" Color="Color.warning" Border=true BorderSize="BorderSize.border1" Value="7"></Badge>
+    <Badge Title="Latest orders" Width="Width.col3" Color="Color.secondary" Border=true BorderSize="BorderSize.border1" Value="23/8"></Badge>
+    <Badge Title="Payments" Width="Width.col2" Color="Color.danger" Border=true BorderSize="BorderSize.border1" Value="3"></Badge>
+    <Badge Title="Orders made" Fill="true" Width="Width.col2" Color="Color.primary" Value="15"></Badge>
 </div>
 <div class="row g-3">
-    <Chart Name="View" a="70" b="45" c="20"></Chart>
+    <Chart Name="View" a="70" b="45" c="20" Border=true Color="Color.secondary"></Chart>
     <Chart Name="Sell" a="80" b="50" c="30"></Chart>
     <Chart Name="Cart" a="90" b="70" c="55"></Chart>
 </div>
 <div class="row g-3">
-    <Slider></Slider>
-    <Progress Width="col-lg-8 col-12" Color="bg-white">
+    <Slider Width="Width.col4" Fill=true Color="Color.primary"></Slider>
+    <Progress Width="Width.col8" Color="Color.primary">
         <Bar Id="1" Color="bg-danger" Striped="true" Value="15"></Bar>
         <Bar Id="3" Color="bg-primary" Striped="true" Value="100"></Bar>
         <Bar Id="4" Color="bg-warning" Striped="true" Value="50"></Bar>
     </Progress>
 </div>
 <div class="row g-3">
-    <ListCard description="d-none"></ListCard>
-    <ListCard description="d-none"></ListCard>
+    <ListCard Width="Width.col6"></ListCard>
+    <ListCard Width="Width.col6"></ListCard>
 </div>
 @code{
     public List<Person> people { get; set; } = new List<Person>();

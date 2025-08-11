@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Mohammad\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Mohammad\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.rtl.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.rtl.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.rtl.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-grid.rtl.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.rtl.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.rtl.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.rtl.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-reboot.rtl.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.rtl.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.rtl.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.rtl.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap-utilities.rtl.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.rtl.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.rtl.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.rtl.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\bootstrap.rtl.min.css.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.bundle.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.bundle.js.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.bundle.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.bundle.min.js.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.esm.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.esm.js.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.esm.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.esm.min.js.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.js.map</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.min.js" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.min.js')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.min.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.6\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map')">
+      <NuGetPackageId>bootstrap</NuGetPackageId>
+      <NuGetPackageVersion>5.3.6</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\bootstrap.min.js.map</Link>
+    </Content>
+  </ItemGroup>
+</Project>

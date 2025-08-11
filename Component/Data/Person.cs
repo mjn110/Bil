@@ -1,4 +1,4 @@
-﻿namespace Component.Data
+﻿namespace Components.Data
 {
     public class Person
     {

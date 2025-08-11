@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Component\Component.csproj" />
+    <ProjectReference Include="..\Component\Components.csproj" />
   </ItemGroup>
 
 </Project>

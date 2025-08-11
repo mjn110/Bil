@@ -1,15 +1,16 @@
 ﻿@page "/Order"  
-@using Component  
-@using Component.Data  
+@using Components  
+@using Components.Data  
+@using Components.Enums
 
 <PageTitle>Order</PageTitle>  
-<ListCard people="people"></ListCard>  
+<ListCard people="people" Width="Width.col12"></ListCard>  
 <div class="row">  
     <h2 class="mt-3">Bil Card</h2>  
-    <Badge Title="Ready drivers" Color="border-success" Value="7"></Badge>  
-    <Badge Title="Latest order" Color="border-primary" Value="12/08"></Badge>  
-    <Badge Title="Payment stage" Color="border-danger" Value="3"></Badge>  
-    <Badge Title="Orders made" Color="border-secondary" Value="15"></Badge>  
+    <Badge Title="Ready drivers" Color="Color.primary" Width="Width.col3" Value="7"></Badge>  
+    <Badge Title="Latest order" Color="Color.warning" Width="Width.col3" Value="12/08"></Badge>
+    <Badge Title="Payment stage" Color="Color.danger" Width="Width.col3" Value="3"></Badge>
+    <Badge Title="Orders made" Color="Color.secondary" Width="Width.col3" Value="15"></Badge>
 </div>  
 
 <Form Title="Collection"></Form>  
