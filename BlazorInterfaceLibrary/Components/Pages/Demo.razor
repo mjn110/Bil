@@ -1,0 +1,34 @@
+﻿@page "/demo"
+@using BlazorInterfaceLibrary.Bil.Classes
+@using BlazorInterfaceLibrary.Bil.Data
+@using BlazorInterfaceLibrary.Bil.Enums
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@rendermode InteractiveServer
+<div class="row">
+    @foreach (var comp in components)
+    {
+        @comp.Render(this)
+    }
+</div>
+
+@code {
+    public List<Person> people { get; set; } = new List<Person>();
+    List<BilComponent> components { get; set; } = new List<BilComponent>();
+    BilComponent list { get; set; } = new Badge();
+    [Parameter]
+    public EventCallback OnPageChanged { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        string componentsData = File.ReadAllText("wwwroot/data/components.json").ToString();
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true,
+            Converters = { new JsonStringEnumConverter() }
+        };
+        var data = JsonSerializer.Deserialize<List<BlazorInterfaceLibrary.Bil.Classes.BilComponent>>(componentsData, options);
+        components = data ?? new List<BlazorInterfaceLibrary.Bil.Classes.BilComponent>();
+    }
+
+}

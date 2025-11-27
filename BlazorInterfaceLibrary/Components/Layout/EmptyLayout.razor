@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+
+<div class="min-vh-100 d-flex flex-column">
+    <header>
+        <Menu />
+    </header>
+
+    <main class="flex-fill">
+        <div class="container py-4">
+            @Body
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <div class="logo-box me-2">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <span class="fw-semibold">Blazor Interface Library</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <small class="text-light">Open source under MIT License</small>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex gap-4 justify-content-md-end justify-content-center">
+                        <a href="/demo" class="text-light text-decoration-none">Demo</a>
+                        <a href="https://github.com/mjn110" target="_blank" class="text-light text-decoration-none">GitHub</a>
+                        <a href="https://linkedin.com/in/mj-najafi" target="_blank" class="text-light text-decoration-none">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>

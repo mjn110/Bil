@@ -1,0 +1,422 @@
+﻿@page "/"
+@using BlazorInterfaceLibrary.Bil.Classes
+@layout EmptyLayout
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blazor Interface Library - Build Beautiful Blazor UIs</title>
+    <meta name="description" content="A comprehensive component library for Blazor applications. Modern, accessible, and fully customizable components to accelerate your development.">
+    <meta name="author" content="Blazor Interface Library">
+
+    <meta property="og:title" content="Blazor Interface Library - Build Beautiful Blazor UIs">
+    <meta property="og:description" content="A comprehensive component library for Blazor applications. Modern, accessible, and fully customizable components to accelerate your development.">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0a0e1a;
+            --bg-card: #111827;
+            --text-primary: #f9fafb;
+            --text-muted: #9ca3af;
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --border: #1f2937;
+        }
+
+        body {
+            background: linear-gradient(180deg, #0d1117 0%, #0a0e1a 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(31, 41, 55, 0.5);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--text-primary) !important;
+        }
+
+        .logo-box {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-link {
+            color: var(--text-muted) !important;
+            transition: color 0.3s;
+        }
+
+            .nav-link:hover {
+                color: var(--text-primary) !important;
+            }
+
+        .btn-primary {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #0a0e1a;
+            font-weight: 600;
+        }
+
+            .btn-primary:hover {
+                background: var(--primary-dark);
+                border-color: var(--primary-dark);
+            }
+
+        .btn-outline-light {
+            border-color: var(--border);
+            color: var(--text-primary);
+        }
+
+            .btn-outline-light:hover {
+                background: rgba(249, 250, 251, 0.1);
+                border-color: var(--text-muted);
+                color: var(--text-primary);
+            }
+
+        .badge-custom {
+            background: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary) 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-custom {
+            background: rgba(17, 24, 39, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(31, 41, 55, 0.5);
+            border-radius: 12px;
+            transition: border-color 0.3s;
+        }
+
+            .card-custom:hover {
+                border-color: rgba(14, 165, 233, 0.5);
+            }
+
+        .code-window {
+            background: rgba(17, 24, 39, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(31, 41, 55, 0.5);
+            border-radius: 12px;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+            .code-window::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: radial-gradient(circle at center, rgba(14, 165, 233, 0.2), transparent);
+                filter: blur(60px);
+                z-index: -1;
+                border-radius: 12px;
+            }
+
+        .window-dots {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot-red {
+            background: #ef4444;
+        }
+
+        .dot-yellow {
+            background: #eab308;
+        }
+
+        .dot-green {
+            background: #22c55e;
+        }
+
+        pre {
+            background: rgba(10, 14, 26, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 0;
+        }
+
+        code {
+            color: var(--text-primary);
+            font-size: 0.875rem;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(14, 165, 233, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: #0a0e1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(14, 165, 233, 0.05) 100%);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        footer {
+            border-top: 1px solid rgba(31, 41, 55, 0.5);
+            margin-top: 5rem;
+            padding: 2rem 0;
+        }
+
+        media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="badge-custom mb-4">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        Open Source & Free
+                    </div>
+
+                    <h1 class="hero-title mb-4">
+                        Build Beautiful Blazor UIs<br>
+                        <span class="gradient-text">In Record Time</span>
+                    </h1>
+
+                    <p class="lead text-light mb-5">
+                        A comprehensive component library for Blazor applications. Modern, accessible, and fully customizable components to accelerate your development.
+                    </p>
+
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
+                        <a href="#getting-started" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Get Started
+                        </a>
+                        <a href="https://github.com/mjn110/Bil" target="_blank" class="btn btn-outline-light btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="me-2">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Code Preview -->
+                    <div class="code-window mt-5">
+                        <div class="window-dots">
+                            <div class="dot dot-red"></div>
+                            <div class="dot dot-yellow"></div>
+                            <div class="dot dot-green"></div>
+                        </div>
+                        <pre class="text-start bg-transparent p-0">
+                        <code>&commat;using BlazorInterfaceLibrary.Bil.Classes
+
+&commat;component.Render&#40;this&#41;;
+
+&commat;code &#123;
+    BilComponent components &#123; get; set; &#125; = new Badge&#40;&quot;Payments&quot;,&quot;24&quot;&#41;;
+&#125;
+</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row justify-content-center">
+        @component.Render(this)
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Why Choose Blazor Interface Library?</h2>
+                <p class="lead text-light">Everything you need to build modern web applications</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-custom p-4">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-3">Lightning Fast</h3>
+                        <p class="text-light">Optimized with minimal bundle size. Get blazing fast load times out of the box.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-custom p-4">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-3">10+ Components</h3>
+                        <p class="text-light">From basic Badges to data grids. Everything you need to build production-ready apps.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-custom p-4">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="h5 mb-3">Fully Customizable</h3>
+                        <p class="text-light">Style components with your brand colors. Full theming support with CSS variables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-center mb-5">Getting Started</h2>
+
+                    <div class="card-custom p-5">
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number me-3">1</div>
+                                <h3 class="h5 mb-0">Install via NuGet</h3>
+                            </div>
+                            <div class="ms-5">
+                                <div class="bg-dark p-3 rounded border border-secondary">
+                                    <code class="text-primary">dotnet add package Bil</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number me-3">2</div>
+                                <h3 class="h5 mb-0">Start Building</h3>
+                            </div>
+                            <div class="ms-5">
+                                <p class="text-light mb-0">Import components and start building your application. Check out our documentation for detailed examples.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="cta-card text-center">
+                <h2 class="display-5 fw-bold mb-3">Ready to Build Something Amazing?</h2>
+                <p class="lead text-light mb-4">Join thousands of developers using Blazor Interface Library to build better web applications.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <a href="#getting-started" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Get Started Now
+                    </a>
+                    <a href="https://github.com/mjn110/Bil" target="_blank" class="btn btn-outline-light btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 20 20">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        Star on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+@code {
+    BilComponent component = new Badge()
+    {
+        Name = "Payments",
+        Value = "24",
+        Width = Bil.Enums.Width.col3,
+    };
+}

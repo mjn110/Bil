@@ -1,0 +1,122 @@
+[
+  {
+    "Component": "Badge",
+    "Id": "a5sda56sd4a65sd",
+    "Color": "warning",
+    "Fill": false,
+    "Border": true,
+    "Width": "col5",
+    "Name": "Ready drivers",
+    "Value": "7"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sda56sd4a65sw",
+    "Color": "dark",
+    "Fill": false,
+    "Border": true,
+    "Width": "col3",
+    "Name": "Latest orders",
+    "Value": "23/8"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sda5esd4a65sw",
+    "Color": "danger",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Payments",
+    "Value": "3"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sd75esd4a65sw",
+    "Color": "danger",
+    "Fill": true,
+    "Border": false,
+    "Width": "col2",
+    "Name": "Orders made",
+    "Value": "15"
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5sd723sd4a65sw",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "View",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5sd72unf4a65sw",
+    "Color": "secondary",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "Sell",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5s6423sd4a65sw",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "Chart",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Slider",
+    "Id": "a5s6a23sd4a65sw",
+    "Color": "primary",
+    "Fill": true,
+    "Border": true,
+    "Width": "col4"
+  },
+  {
+    "Component": "Progress",
+    "Id": "a5s64trsd4a65sw",
+    "Color": "primary",
+    "Fill": false,
+    "Border": true,
+    "Width": "col8",
+    "Bars": [
+      {
+        "Id": 1,
+        "Color": "bg-primary",
+        "Value": 25,
+        "Striped": false,
+        "Height": "10px"
+      },
+      {
+        "Id": 2,
+        "Color": "bg-success",
+        "Value": 50,
+        "Striped": true,
+        "Height": "10px"
+      }
+    ]
+  },
+  {
+    "Component": "List",
+    "Id": "a5s6a29sd4a65sw",
+    "Color": "primary",
+    "Border": true,
+    "Width": "col6"
+  },
+  {
+    "Component": "List",
+    "Id": "a5sy729sd4a65sw",
+    "Color": "danger",
+    "Border": true,
+    "Width": "col6"
+  }
+]
