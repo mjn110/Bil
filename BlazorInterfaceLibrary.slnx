@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BlazorInterfaceLibrary/BlazorInterfaceLibrary.csproj" />
+  <Project Path="RazorComponentLibrary/RazorComponentLibrary.csproj" Id="c27c2bce-d852-4eb8-a7c2-ce16442d75ab" />
+</Solution>

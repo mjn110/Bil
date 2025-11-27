@@ -1,0 +1,45 @@
+﻿@inherits Classes.Setting
+<div class="@GetWidthClass col-md mb-3">  
+    <div class="card @GetColorClass() @IsBordered() @GetBorderClass() shadow-sm mb-3 h-100">
+        <div class="card-body m-3 pb-4">  
+
+            <div class="row h-100">  
+                <div class="col col-lg-12 d-flex justify-content-center" style="height:80px !important;">  
+                    <div class="pie m-0" style="--p:100; --c: lightgray">@Name</div>  
+                    <div class="pie m-0" style="--p:@a; --b:20px; --c: #007bff">&nbsp;</div>  
+                    <div class="pie m-0" style="--p:@b; --b:15px; --c: #dc3545">&nbsp;</div>  
+                    <div class="pie m-0" style="--p:@c; --b:10px; --c: #ebba34">&nbsp;</div>  
+                </div>  
+            </div>  
+            <div class="row d-none d-lg-flex">  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-warning mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Users</small>  
+                </div>  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-danger mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Self</small>  
+                </div>  
+                <div class="col">  
+                    <span class="badge rounded-pill bg-primary mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small class="d-inline">Official</small>  
+                </div>  
+            </div>  
+            <Download Parent="@this.GetType().Name"></Download>  
+        </div>  
+    </div>  
+</div>  
+
+@code {  
+    [Parameter]  
+    public string Name { get; set; } = "Chart";  
+    [Parameter]  
+    public int a { get; set; } = 70;  
+    [Parameter]  
+    public int b { get; set; } = 50;  
+    [Parameter]  
+    public int c { get; set; } = 20;  
+
+
+    protected override async Task OnInitializedAsync()  
+    {  
+
+    }
+}

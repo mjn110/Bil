@@ -1,0 +1,157 @@
+.components-reconnect-first-attempt-visible[b-ns2jr4g7no],
+.components-reconnect-repeated-attempt-visible[b-ns2jr4g7no],
+.components-reconnect-failed-visible[b-ns2jr4g7no],
+.components-pause-visible[b-ns2jr4g7no],
+.components-resume-failed-visible[b-ns2jr4g7no],
+.components-rejoining-animation[b-ns2jr4g7no] {
+    display: none;
+}
+
+#components-reconnect-modal.components-reconnect-show .components-reconnect-first-attempt-visible[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-show .components-rejoining-animation[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-paused .components-pause-visible[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-resume-failed .components-resume-failed-visible[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-retrying[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-retrying .components-reconnect-repeated-attempt-visible[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-retrying .components-rejoining-animation[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-failed[b-ns2jr4g7no],
+#components-reconnect-modal.components-reconnect-failed .components-reconnect-failed-visible[b-ns2jr4g7no] {
+    display: block;
+}
+
+
+#components-reconnect-modal[b-ns2jr4g7no] {
+    background-color: white;
+    width: 20rem;
+    margin: 20vh auto;
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete;
+    animation: components-reconnect-modal-fadeOutOpacity-b-ns2jr4g7no 0.5s both;
+    &[open]
+
+{
+    animation: components-reconnect-modal-slideUp-b-ns2jr4g7no 1.5s cubic-bezier(.05, .89, .25, 1.02) 0.3s, components-reconnect-modal-fadeInOpacity-b-ns2jr4g7no 0.5s ease-in-out 0.3s;
+    animation-fill-mode: both;
+}
+
+}
+
+#components-reconnect-modal[b-ns2jr4g7no]::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: components-reconnect-modal-fadeInOpacity-b-ns2jr4g7no 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes components-reconnect-modal-slideUp-b-ns2jr4g7no {
+    0% {
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes components-reconnect-modal-fadeInOpacity-b-ns2jr4g7no {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes components-reconnect-modal-fadeOutOpacity-b-ns2jr4g7no {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.components-reconnect-container[b-ns2jr4g7no] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#components-reconnect-modal p[b-ns2jr4g7no] {
+    margin: 0;
+    text-align: center;
+}
+
+#components-reconnect-modal button[b-ns2jr4g7no] {
+    border: 0;
+    background-color: #6b9ed2;
+    color: white;
+    padding: 4px 24px;
+    border-radius: 4px;
+}
+
+    #components-reconnect-modal button:hover[b-ns2jr4g7no] {
+        background-color: #3b6ea2;
+    }
+
+    #components-reconnect-modal button:active[b-ns2jr4g7no] {
+        background-color: #6b9ed2;
+    }
+
+.components-rejoining-animation[b-ns2jr4g7no] {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .components-rejoining-animation div[b-ns2jr4g7no] {
+        position: absolute;
+        border: 3px solid #0087ff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: components-rejoining-animation-b-ns2jr4g7no 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .components-rejoining-animation div:nth-child(2)[b-ns2jr4g7no] {
+            animation-delay: -0.5s;
+        }
+
+@keyframes components-rejoining-animation-b-ns2jr4g7no {
+    0% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,33 @@
+﻿@page "/docs/chart"
+@using BlazorInterfaceLibrary.Bil.Classes
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Chart</h1>
+        <p>The Chart component displays circular charts for visualizing comparison results.</p>
+        <pre class="ps-5 bg-dark rounded">
+        <code class="text-light fs-5">
+&commat;using BlazorInterfaceLibrary.Bil.Classes
+            
+&commat;component.Render&#40;this&#41;;
+
+&commat;code &#123;
+    BilComponent components &#123; get; set; &#125; = new Chart&#40;&quot;Sell&quot;,&quot;50,&quot;30,&quot;20&quot;&#41;;
+&#125;
+            </code>
+        </pre>
+
+        <p>The code above load the Chart component in your page.</p>
+
+        @component.Render(this)
+    </div>
+</div>
+@code {
+    BilComponent component { get; set; } = new Chart()
+    {
+        Name = "Sell",
+        Option1 = 50,
+        Option2 = 30,
+        Option3 = 20,
+        Width = Bil.Enums.Width.col5,
+    };
+}

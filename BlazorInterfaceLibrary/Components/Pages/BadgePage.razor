@@ -1,0 +1,32 @@
+﻿@page "/docs/badge"
+@using BlazorInterfaceLibrary.Bil.Classes
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Badge</h1>
+        <p>The Badge component displays a simple numeric card to show results or counts.</p>
+        <pre class="ps-5 bg-dark rounded">
+            <code class="text-light fs-5">
+&commat;using BlazorInterfaceLibrary.Bil.Classes
+            
+&commat;component.Render&#40;this&#41;;
+
+&commat;code &#123;
+    BilComponent components &#123; get; set; &#125; = new Badge&#40;&quot;Payments&quot;,&quot;24&quot;&#41;;
+&#125;
+            </code>
+        </pre>
+
+
+        <p>The code above load the Badge component in your page.</p>
+
+        @component.Render(this)
+    </div>
+</div>
+@code {
+    BilComponent component { get; set; } = new Badge()
+    {
+        Name = "Payments",
+        Value = "24",
+        Width = Bil.Enums.Width.col5,
+    };
+}

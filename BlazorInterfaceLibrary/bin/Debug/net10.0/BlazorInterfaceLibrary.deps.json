@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BlazorInterfaceLibrary/1.0.0": {
+        "dependencies": {
+          "Bil": "1.0.0"
+        },
+        "runtime": {
+          "BlazorInterfaceLibrary.dll": {}
+        }
+      },
+      "Bil/1.0.0": {
+        "runtime": {
+          "lib/net10.0/Bil.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorInterfaceLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bil/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cQP9m8/TR/byFQxBZn8cl85gOkHaCuFa0BRORppBLXgN3qz7nDlS0mcK6VScp23BGTEVoULrCM/Z6r8j1TT0hA==",
+      "path": "bil/1.0.0",
+      "hashPath": "bil.1.0.0.nupkg.sha512"
+    }
+  }
+}
