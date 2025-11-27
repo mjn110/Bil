@@ -11,81 +11,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorInterfaceLibrary
 build_property.RootNamespace = BlazorInterfaceLibrary
-build_property.ProjectDir = C:\Users\Mohammad\source\repos\BlazorInterfaceLibrary\BlazorInterfaceLibrary\
+build_property.ProjectDir = C:\Users\Mohammad\Documents\GitHub\Bil\BlazorInterfaceLibrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Mohammad\source\repos\BlazorInterfaceLibrary\BlazorInterfaceLibrary
+build_property.MSBuildProjectDirectory = C:\Users\Mohammad\Documents\GitHub\Bil\BlazorInterfaceLibrary
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/App.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Layout/EmptyLayout.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Layout/EmptyLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRW1wdHlMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Layout/Menu.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Layout/Menu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/BadgePage.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/BadgePage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCYWRnZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/ChartPage.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/ChartPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGFydFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/Demo.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/Demo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZW1vLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/Error.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/Home.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/Installation.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/Installation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnN0YWxsYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/ListPage.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/ListPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMaXN0UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/NotFound.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Pages/Overview.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Pages/Overview.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPdmVydmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Routes.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/_Imports.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Layout/MainLayout.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-0723oqh1rm
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Layout/NavMenu.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-xphkfpfbqz
 
-[C:/Users/Mohammad/source/repos/BlazorInterfaceLibrary/BlazorInterfaceLibrary/Components/Layout/ReconnectModal.razor]
+[C:/Users/Mohammad/Documents/GitHub/Bil/BlazorInterfaceLibrary/Components/Layout/ReconnectModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ns2jr4g7no

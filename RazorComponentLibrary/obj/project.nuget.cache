@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6nUwvVHWaF8=",
+  "dgSpecHash": "Dr5Ln/c2Zo4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mohammad\\source\\repos\\BlazorInterfaceLibrary\\RazorComponentLibrary\\RazorComponentLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\RazorComponentLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.0\\microsoft.aspnetcore.authorization.10.0.0.nupkg.sha512",
     "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.0\\microsoft.aspnetcore.components.10.0.0.nupkg.sha512",
@@ -22,7 +22,8 @@
     "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.0\\microsoft.extensions.options.configurationextensions.10.0.0.nupkg.sha512",
     "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512",
     "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.extensions.validation\\10.0.0\\microsoft.extensions.validation.10.0.0.nupkg.sha512",
-    "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.jsinterop\\10.0.0\\microsoft.jsinterop.10.0.0.nupkg.sha512"
+    "C:\\Users\\Mohammad\\.nuget\\packages\\microsoft.jsinterop\\10.0.0\\microsoft.jsinterop.10.0.0.nupkg.sha512",
+    "C:\\Users\\Mohammad\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

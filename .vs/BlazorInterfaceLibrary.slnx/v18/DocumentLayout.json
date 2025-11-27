@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\list.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\list.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\pagination.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\pagination.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\progress.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\progress.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\setting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\setting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\slider.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\slider.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\form.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\form.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\chart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\chart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\badge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\badge.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|c:\\users\\mohammad\\documents\\github\\bil\\razorcomponentlibrary\\bar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C27C2BCE-D852-4EB8-A7C2-CE16442D75AB}|RazorComponentLibrary\\RazorComponentLibrary.csproj|solutionrelative:razorcomponentlibrary\\bar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDo.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\ToDo.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\ToDo.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\ToDo.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\ToDo.razor",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:34:44.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Slider.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Slider.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Slider.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Slider.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Slider.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:34:39.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Setting.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Setting.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Setting.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Setting.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Setting.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:34:31.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Progress.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Progress.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Progress.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Progress.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Progress.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:34:18.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pagination.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Pagination.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Pagination.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Pagination.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Pagination.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:34:12.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\List.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\List.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\List.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\List.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:33:12.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Form.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Form.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Form.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Form.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:33:06.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Chart.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Chart.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Chart.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Chart.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Chart.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:32:36.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bar.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Bar.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Bar.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Bar.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Bar.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:32:06.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Badge.razor",
+              "DocumentMoniker": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Badge.razor",
+              "RelativeDocumentMoniker": "RazorComponentLibrary\\Badge.razor",
+              "ToolTip": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\RazorComponentLibrary\\Badge.razor",
+              "RelativeToolTip": "RazorComponentLibrary\\Badge.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T22:31:57.142Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

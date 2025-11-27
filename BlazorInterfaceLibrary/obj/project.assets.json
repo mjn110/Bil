@@ -73,11 +73,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mohammad\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
       "projectName": "BlazorInterfaceLibrary",
-      "projectPath": "C:\\Users\\Mohammad\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
+      "projectPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary.csproj",
       "packagesPath": "C:\\Users\\Mohammad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mohammad\\source\\repos\\BlazorInterfaceLibrary\\BlazorInterfaceLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Mohammad\\Documents\\GitHub\\Bil\\BlazorInterfaceLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
