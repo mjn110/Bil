@@ -57,7 +57,7 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: FEDERATED
+          auth-type: SERVICE_PRINCIPAL
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
