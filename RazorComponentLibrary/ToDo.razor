@@ -1,26 +1,6 @@
 ﻿@page "/todo"
-@page "/todo/{description}"
 @using RazorComponentLibrary.Data
 @using Newtonsoft.Json.Linq
-<div>
-    @if (bool.TryParse(description, out var result))
-    {
-        <h3 class="mb-3">@this.GetType().Name</h3>
-    }
-    <p>
-        @if (overview != null)
-        {
-            <h5 class="mt-3">Overview</h5>
-            @overview
-        }
-        @if (usage != null)
-        {
-            <h5 class="mt-3">Usage</h5>
-            @usage
-        }
-    </p>
-</div>
-
 <div class="d-flex justify-content-center vh-100">
     <div class="col-12 col-lg-8">
         <div class="input-group mb-2">
@@ -43,38 +23,13 @@
     </div>
 </div>
 @code {
-    [Parameter]
-    public string description { get; set; } = "false";
-
     private string newTask = string.Empty;
     private List<string> tasks = new List<string>() { "Default task" };
 
-    private string overview { get; set; }
-    private string usage { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        if (bool.TryParse(description, out var result))
-        {
-            GetDescription();
-        }
-    }
-
-    private void GetDescription()
-    {
-        string json = File.ReadAllText("wwwroot/data/description.json");
-
-        // Deserialize into a JArray for dynamic access
-        var descriptions = JArray.Parse(json);
-
-        // Find the matching record based on Name
-        var record = descriptions.FirstOrDefault(d => d["Name"]?.ToString() == this.GetType().Name);
-
-        if (record != null)
-        {
-            overview = record["Overview"]?.ToString();
-            usage = record["Usage"]?.ToString();
-        }
+        
     }
 
     private void AddTask()
