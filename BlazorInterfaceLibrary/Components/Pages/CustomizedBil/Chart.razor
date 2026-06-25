@@ -1,0 +1,52 @@
+﻿<div class="col-md mb-3">
+    <div class="card @Class border-2 rounded-4 shadow mb-3 h-100">
+        <div class="card-body m-3 pb-4">
+
+            <div class="row h-100">
+                <div class="col col-lg-8 d-flex justify-content-center fs-5" style="height:80px !important;">
+                    <div class="pie m-0 fs-5" style="--p:100; --c: lightgray">@Name</div>
+                    <div class="pie m-0" style="--p:70; --b:16px; --c: #dc3545">&nbsp;</div>
+                    <div class="pie m-0" style="--p:40; --b:13px; --c: #ffc107">&nbsp;</div>
+                    <div class="pie m-0" style="--p:20; --b:10px; --c: #198754">&nbsp;</div>
+                </div>
+
+                <div class="col col-lg-4 align-items-between justify-content-center fs-5">
+                    <div>
+                        <span class="badge rounded-pill bg-success mx-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small
+                        class="d-inline">Hybrid</small>
+                    </div>
+                    <div>
+                        <span class="badge rounded-pill bg-warning mx-1 mb-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small
+                        class="d-inline">Oversized</small>
+                    </div>
+                    <div>
+                        <span class="badge rounded-pill bg-danger mx-1 mb-1">&nbsp;&nbsp;&nbsp;&nbsp;</span><small
+                        class="d-inline">Boiler</small>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row d-none d-lg-flex">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Name { get; set; } = "Chart";
+    [Parameter]
+    public int a { get; set; } = 70;
+    [Parameter]
+    public int b { get; set; } = 50;
+    [Parameter]
+    public int c { get; set; } = 20;
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+}

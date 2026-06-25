@@ -1,0 +1,21 @@
+﻿<div class="col-2 mb-3">
+    <div class="card rounded-4 border border-2 @Class shadow">
+        <h6 class="m-3 float-left">@Title</h6>
+        <div class="card-body">
+            <p class="display-6 px-3 m-auto h-100">@Value</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Value { get; set; }
+    [Parameter]
+    public string Class { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+}

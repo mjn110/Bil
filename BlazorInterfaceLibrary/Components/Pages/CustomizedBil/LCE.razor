@@ -1,0 +1,28 @@
+﻿@page "/lce"
+@rendermode InteractiveServer
+<div class="row">
+    <Badge Title="Building type" Value="Office" Class="border-success"></Badge>
+    <Badge Title="Floor area" Value="4.5K m²" Class="border-secondary"></Badge>
+    <Badge Title="Occupancy" Value="320"></Badge>
+    <Badge Title="Climate zone" Value="SouthMid" Class="text-danger"></Badge>
+    <Badge Title="Heating demand" Value="85 kW" Class="bg-danger text-white"></Badge>
+    <Badge Title="Cooling demand" Value="42 kW"  Class="border-primary"></Badge>
+</div>
+<div class="row">
+    <Chart Name="Carbon" a="20" b="30" c="50" Class="border-success"></Chart>
+    <Chart Name="Capital" a="20" b="30" c="50"></Chart>
+    <Chart Name="Annual" a="20" b="30" c="50"></Chart>
+</div>
+<div class="row">
+    <Progress>
+        <Bar Id="1" Color="bg-danger" Value="15"></Bar>
+        <Bar Id="2" Color="bg-warning" Value="30"></Bar>
+        <Bar Id="3" Color="bg-success" Value="55"></Bar>
+    </Progress>
+</div>
+<div class="row">
+    <List RecordsPerPage="3"></List>
+    <List RecordsPerPage="3"></List>
+</div>
+@code {
+}

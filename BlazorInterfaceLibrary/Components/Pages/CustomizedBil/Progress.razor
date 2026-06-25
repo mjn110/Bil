@@ -1,0 +1,22 @@
+﻿@using Newtonsoft.Json.Linq
+<div class="mb-3">
+    <div class="card border-2 table-responsive h-100 rounded-4 shadow p-4">
+        <table class="table table-borderless mb-auto">
+            <thead>
+                <tr class="text-center">
+                    <th class="text-start" scope="col">#</th>
+                    <th scope="col">Low</th>
+                    <th scope="col">Medium</th>
+                    <th scope="col">High</th>
+                </tr>
+            </thead>
+            <tbody>
+                @ChildContent
+            </tbody>
+        </table>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

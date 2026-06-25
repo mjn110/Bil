@@ -1,0 +1,149 @@
+[
+  {
+    "Component": "Badge",
+    "Id": "a5sda56sd4a65sd",
+    "Color": "warning",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Building type",
+    "Value": "Office"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sda56sd4a65sw",
+    "Color": "dark",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Floor area",
+    "Value": "4,5k m²"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sda5esd4a65sw",
+    "Color": "danger",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Occupancy",
+    "Value": "320"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sd75esd4a65sw",
+    "Color": "default",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Climate zone",
+    "Value": "SM"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sd75esd4a65sw",
+    "Color": "danger",
+    "Fill": true,
+    "Border": false,
+    "Width": "col2",
+    "Name": "Heating demand",
+    "Value": "85 kW"
+  },
+  {
+    "Component": "Badge",
+    "Id": "a5sd75esd4a65sw",
+    "Color": "primary",
+    "Fill": false,
+    "Border": true,
+    "Width": "col2",
+    "Name": "Cooling demand",
+    "Value": "42 kW"
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5sd723sd4a65sw",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "Capital",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5sd72unf4a65sw",
+    "Color": "secondary",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "Annual",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Chart",
+    "Id": "a5s6423sd4a65sw",
+    "Fill": false,
+    "Border": true,
+    "Width": "col4",
+    "Name": "Carbon",
+    "Option1": 45,
+    "Option2": 35,
+    "Option3": 20
+  },
+  {
+    "Component": "Slider",
+    "Id": "a5s6a23sd4a65sw",
+    "Color": "primary",
+    "Fill": true,
+    "Border": true,
+    "Width": "col4"
+  },
+  {
+    "Component": "Progress",
+    "Id": "a5s64trsd4a65sw",
+    "Color": "primary",
+    "Fill": false,
+    "Border": true,
+    "Width": "col8",
+    "Bars": [
+      {
+        "Id": 20,
+        "Color": "bg-success",
+        "Value": 13,
+        "Striped": false,
+        "Height": "10px"
+      },
+      {
+        "Id": 20,
+        "Color": "bg-warning",
+        "Value": 50,
+        "Striped": false,
+        "Height": "10px"
+      },
+      {
+        "Id": 20,
+        "Color": "bg-danger",
+        "Value": 85,
+        "Striped": true,
+        "Height": "10px"
+      }
+    ]
+  },
+  {
+    "Component": "List",
+    "Id": "a5s6a29sd4a65sw",
+    "Color": "primary",
+    "Border": true,
+    "Width": "col6"
+  },
+  {
+    "Component": "List",
+    "Id": "a5sy729sd4a65sw",
+    "Color": "danger",
+    "Border": true,
+    "Width": "col6"
+  }
+]
